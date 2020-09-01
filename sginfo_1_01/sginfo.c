@@ -1076,7 +1076,7 @@ static void Simple_hklList(T_SgInfo *SgInfo, int Maxh, int Maxk, int Maxl,
       putc('\n', stdout);
     }
     else if (ListSysAbsent)
-      fprintf(stdout, "# %3d %3d %3d  %3d  (%d)\n",
+      fprintf(stdout, "* %3d %3d %3d  %3d  (%d)\n",
                       h, k, l, M, iList);
   }
 
@@ -1802,7 +1802,7 @@ int main(int argc, char *argv[])
     }
 
     if (F_hklList) {
-      Simple_hklList(SgInfo, 4, 4, 4, F_Verbose);
+      Simple_hklList(SgInfo, 10, 10, 10, F_Verbose);
       PrintClearSgError(F_ClearError, 0);
     }
 
